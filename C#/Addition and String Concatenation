@@ -1,0 +1,33 @@
+// Implicit Data Conversion and Addition Exercise Notes, including Operator Precedence
+
+// Adding Numbers:
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber); // Output: 19 (Simple integer addition)
+
+// Mixing Types (String + Int):
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + widgetsSold + " widgets."); // Output: Bob sold 7 widgets. (Int converted to string, then concatenated)
+
+// Tricky Mixing Types:
+Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets."); // Output: Bob sold 77 widgets. (All treated as strings and concatenated - unexpected result!)
+
+// Using Parentheses for Clarity:
+Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets."); // Output: Bob sold 14 widgets. (Addition done FIRST, then converted to string for concatenation)
+
+// Operator Precedence Example:
+int result = 3 + 1 * 5 / 2; // Calculation: 3 + (1 * 5) / 2 -> 3 + 5 / 2 -> 3 + 2 -> 5
+Console.WriteLine("Result of 3 + 1 * 5 / 2 is: " + result); // Output: Result of 3 + 1 * 5 / 2 is: 5
+
+// Key Takeaways:
+
+// 1. + operator does BOTH addition (numbers) and string concatenation. (Operator overloading!)
+// 2. C# tries to guess what you mean. (Implicit conversion).
+// 3. Parentheses () are your friends! Use them to force order of operations.
+// 4. Mixing string and int operations on the same line can lead to unexpected results.
+// 5. When mixing types, int is often implicitly converted to a string.
+// 6. Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+// 7. Multiplication and division are evaluated from left to right.
+// 8. Addition and subtraction are evaluated from left to right.
+// 9. Integer division truncates decimals (e.g., 5 / 2 = 2).
