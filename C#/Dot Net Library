@@ -1,0 +1,41 @@
+// .NET Libraries Learning Notes - Code Examples
+
+// 1. Using the Console Class for Input/Output:
+Console.WriteLine("Enter your name: "); // Output to console
+string userName = Console.ReadLine(); // Input from console
+Console.WriteLine("Hello, " + userName + "!");
+
+// 2. Using String Methods (Part of the .NET Class Library):
+string message = "hello world";
+string upperMessage = message.ToUpper(); // Convert to uppercase
+Console.WriteLine(upperMessage); // Output: HELLO WORLD
+
+string lowerMessage = upperMessage.ToLower(); // Convert to lowercase
+Console.WriteLine(lowerMessage); // Output: hello world
+
+// 3. Using Math Class (General-Purpose):
+double squareRoot = Math.Sqrt(25); // Calculate square root
+Console.WriteLine("Square root of 25: " + squareRoot); // Output: 5
+
+double power = Math.Pow(2, 3); // Calculate 2 to the power of 3
+Console.WriteLine("2 to the power of 3: " + power); // Output: 8
+
+// 4. Using File Class (File I/O):
+string filePath = "example.txt";
+string fileContent = "This is an example file.";
+
+System.IO.File.WriteAllText(filePath, fileContent); // Write to a file
+Console.WriteLine("File created: " + filePath);
+
+string readContent = System.IO.File.ReadAllText(filePath); // Read from a file
+Console.WriteLine("File content: " + readContent);
+
+// 5. Using DateTime Struct (Part of .Net, example of a struct)
+DateTime now = DateTime.Now;
+Console.WriteLine("Current date and time: "+ now);
+
+// Notes:
+// - These examples demonstrate using classes and methods from the .NET Class Library.
+// - System.Console, System.String, System.Math, System.IO.File, and System.DateTime are all part of the .NET Class Library.
+// - These are just a few examples; the library has thousands of classes and methods.
+// - You'll learn more as you explore and build C# applications.
