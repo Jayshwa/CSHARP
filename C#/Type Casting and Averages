@@ -1,0 +1,57 @@
+// Student Grade Calculation Notes
+
+// Number of assignments for each student.
+int currentAssignments = 5;
+
+// Sophia's assignment scores.
+int sophia1 = 93;
+int sophia2 = 87;
+int sophia3 = 98;
+int sophia4 = 95;
+int sophia5 = 100;
+
+// Nicolas's assignment scores.
+int nicolas1 = 80;
+int nicolas2 = 83;
+int nicolas3 = 82;
+int nicolas4 = 88;
+int nicolas5 = 85;
+
+// Zahirah's assignment scores.
+int zahirah1 = 84;
+int zahirah2 = 96;
+int zahirah3 = 73;
+int zahirah4 = 85;
+int zahirah5 = 79;
+
+// Jeong's assignment scores.
+int jeong1 = 90;
+int jeong2 = 92;
+int jeong3 = 98;
+int jeong4 = 100;
+int jeong5 = 97;
+
+// Calculate the sum of each student's assignment scores.
+int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
+int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
+int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
+int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
+
+// Calculate the average score for each student.
+// Explicitly cast the sum to decimal to ensure accurate division.
+decimal sophiaScore = (decimal) sophiaSum / currentAssignments;
+decimal nicolasScore = (decimal) nicolasSum / currentAssignments;
+decimal zahirahScore = (decimal) zahirahSum / currentAssignments;
+decimal jeongScore = (decimal) jeongSum / currentAssignments;
+
+// Output the student's name, average score, and letter grade.
+Console.WriteLine("Sophia: " + sophiaScore + " A");
+Console.WriteLine("Nicolas: " + nicolasScore + " B");
+Console.WriteLine("Zahirah: " + zahirahScore + " B");
+Console.WriteLine("Jeong: " + jeongScore + " A");
+
+// Notes:
+// - This code calculates and displays the average score for each student based on their assignment scores.
+// - It demonstrates integer addition and explicit decimal casting for division.
+// - The letter grades are hardcoded for demonstration purposes.
+// - This example shows a basic scenario; in a real-world application, you might use arrays or lists to store and process student data more efficiently.
