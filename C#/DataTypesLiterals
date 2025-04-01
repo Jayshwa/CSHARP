@@ -1,0 +1,31 @@
+// Exercise - Print literal values
+
+// Literal values are constant values that never change.
+
+// Use character literals
+Console.WriteLine('b'); // Prints the character 'b' to the console.
+
+// Use integer literals
+Console.WriteLine(123); // Prints the integer 123 to the console.
+
+// Use floating-point literals
+Console.WriteLine(0.25F); // Prints the float 0.25 to the console (F indicates float).
+Console.WriteLine(2.625); // Prints the double 2.625 to the console.
+Console.WriteLine(12.39816m); // Prints the decimal 12.39816 to the console (m indicates decimal).
+
+// Use Boolean literals
+Console.WriteLine(true); // Prints the boolean value 'true' to the console.
+Console.WriteLine(false); // Prints the boolean value 'false' to the console.
+
+// Why emphasize data types?
+// Data types define capabilities.
+// Strings and chars are for "presentation, not calculation".
+// Int and decimal are for mathematical operations.
+// Bool is for true/false evaluations.
+
+// Recap
+// string: words, phrases, alphanumeric data for presentation.
+// char: single alphanumeric character.
+// int: whole number.
+// decimal: number with a fractional component.
+// bool: true/false value.
