@@ -1,0 +1,24 @@
+// Exercise - Combine strings using character escape sequences
+
+// Format output using character escape sequences
+Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ... \n"); // Prints the header, including escaped quotes and a newline.
+Console.WriteLine("Invoice: 1021\t\tComplete!"); // Prints invoice 1021 with tabs for formatting.
+Console.WriteLine("Invoice: 1022\t\tComplete!"); // Prints invoice 1022 with tabs for formatting.
+Console.WriteLine("\nOutput Directory:\t"); // Prints the output directory label with a newline and tab.
+
+// Format output using verbatim string literals
+Console.Write(@"c:\invoices"); // Prints the output directory path using a verbatim string literal.
+
+// Format output using unicode escape characters
+// To generate Japanese invoices: Nihon no seikyū-sho o seisei suru ni wa:
+Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t"); // Prints the Japanese instructions with Unicode characters, newlines, and tabs.
+
+// User command to run an application
+Console.WriteLine(@"c:\invoices\app.exe -j"); // Prints the command to generate Japanese invoices using a verbatim string literal.
+
+// Recap
+// Use character escape sequences when you need to insert a special character into a literal string, like a tab \t, new line \n, or a double quotation mark \".
+// Use an escape character for the backslash \\ when you need to use a backslash in all other scenarios.
+// Use the @ directive to create a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.
+// Use the \u plus a four-character code to represent Unicode characters (UTF-16) in a string.
+// Unicode characters may not print correctly depending on the application.
